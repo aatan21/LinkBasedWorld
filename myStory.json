@@ -1,71 +1,97 @@
 {
-    "Title": "Campus Life on the West Side",
+    "Title": "The Midnight Laundromat",
     "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Baskin Engineering",
+    "InitialLocation": "Front Doors",
     "Locations": {
-        "Baskin Engineering": {
-            "Body": "This is Jack Baskin Engineering, has cool buildings.",
+        "Front Doors": {
+            "Body": "The front doors of the laundromat. It's late at night and the place is eerily quiet.",
             "Choices": [
                 {
-                    "Text": "West",
-                    "Target": "Kresge"
+                    "Text": "Aisle 1",
+                    "Target": "Aisle 1"
                 }
             ]
         },
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Aisle 1": {
+            "Body": "This is Aisle 1 in the laundromat.",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "Front Doors",
+                    "Target": "Front Doors"
                 },
                 {
-                    "Text": "East",
-                    "Target": "Baskin Engineering"
-                }
-            ]
-        },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
-            "Choices": [
-                {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Aisle 2",
+                    "Target": "Aisle 2"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Vending Corner",
+                    "Target": "Vending Corner"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Aisle 2": {
+            "Body": "This is Aisle 2 in the laundromat.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "Aisle 1",
+                    "Target": "Aisle 1"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Washer 4",
+                    "Target": "Washer 4"
+                },
+                {
+                    "Text": "Back Hallway",
+                    "Target": "Back Hallway"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Vending Corner": {
+            "Body": "This is the vending corner of the laundromat. In the corner sits a rusty, unplugged arcade machine emitting a strange light.",
+            "ArcadeScreens": [
+                "RUN - 9999", 
+                "ALONE - 0000", 
+                "WHY - 404"
+            ],
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Aisle 1",
+                    "Target": "Aisle 1"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Washer 4": {
+            "Body": "This is Washer 4. You peer into the deep, damp lint trap.",
+            "Item": "Bent Quarter",
+            "Choices": [
+                {
+                    "Text": "Aisle 2",
+                    "Target": "Aisle 2"
+                }
+            ]
+        },
+        "Back Hallway": {
+            "Body": "This is the dark back hallway. The heavy metal door to the Manager's Office is jammed shut by a faceplate with a missing screw.",
+            "Choices": [
+                {
+                    "Text": "Aisle 2",
+                    "Target": "Aisle 2"
+                },
+                {
+                    "Text": "Pry open the Manager's Office door",
+                    "Target": "Manager's Office",
+                    "RequiredItem": "Bent Quarter"
+                }
+            ]
+        },
+        "Manager's Office": {
+            "Body": "This is the manager's office of the laundromat.",
+            "Choices": [
+                {
+                    "Text": "Back Hallway",
+                    "Target": "Back Hallway"
+                }
+            ]
         }
     }
 }
