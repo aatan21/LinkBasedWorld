@@ -1,14 +1,27 @@
 {
     "Title": "Campus Life on the West Side",
     "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "InitialLocation": "Baskin Engineering",
     "Locations": {
+        "Baskin Engineering": {
+            "Body": "This is Jack Baskin Engineering, has cool buildings.",
+            "Choices": [
+                {
+                    "Text": "West",
+                    "Target": "Kresge"
+                }
+            ]
+        },
         "Kresge": {
             "Body": "This is Kresge College, lots of nice trees.",
             "Choices": [
                 {
                     "Text": "South",
                     "Target": "Porter"
+                },
+                {
+                    "Text": "East",
+                    "Target": "Baskin Engineering"
                 }
             ]
         },
