@@ -4,91 +4,92 @@
     "InitialLocation": "Front Doors",
     "Locations": {
         "Front Doors": {
-            "Body": "The front doors of the laundromat. It's late at night and the place is eerily quiet.",
+            "Body": "You stand before the glass front doors of the laundromat, but there is no street outside. Only a thick, grey fog presses against the glass, slick with condensation. The aggressive buzz of the fluorescent lights above makes your teeth ache. You try to push the doors open, but there are no handles on the inside. You are sealed in.",
             "Choices": [
                 {
-                    "Text": "Aisle 1",
+                    "Text": "Walk down Aisle 1",
                     "Target": "Aisle 1"
                 }
             ]
         },
         "Aisle 1": {
-            "Body": "This is Aisle 1 in the laundromat.",
+            "Body": "Rows of identical washing machines surround you. Most of them are running, the water sloshing rhythmically inside, but peering through the glass doors reveals they are completely empty. The air here is thick, humid, and reeks of cheap, artificial lavender detergent.",
             "Choices": [
                 {
-                    "Text": "Front Doors",
+                    "Text": "Return to the Front Doors",
                     "Target": "Front Doors"
                 },
                 {
-                    "Text": "Aisle 2",
+                    "Text": "Continue to Aisle 2",
                     "Target": "Aisle 2"
                 },
                 {
-                    "Text": "Vending Corner",
+                    "Text": "Approach the Vending Corner",
                     "Target": "Vending Corner"
                 }
             ]
         },
         "Aisle 2": {
-            "Body": "This is Aisle 2 in the laundromat.",
+            "Body": "The buzzing of the overhead lights is slightly out of sync here, creating a nauseating strobe effect on the cracked linoleum floor. You notice a set of damp footprints leading down the aisle that don't belong to you. The sloshing from the surrounding machines sounds almost like whispering when you aren't looking directly at them.",
             "Choices": [
                 {
-                    "Text": "Aisle 1",
+                    "Text": "Go back to Aisle 1",
                     "Target": "Aisle 1"
                 },
                 {
-                    "Text": "Washer 4",
+                    "Text": "Inspect Washer 4",
                     "Target": "Washer 4"
                 },
                 {
-                    "Text": "Back Hallway",
+                    "Text": "Walk into the Back Hallway",
                     "Target": "Back Hallway"
                 }
             ]
         },
         "Vending Corner": {
-            "Body": "This is the vending corner of the laundromat. In the corner sits a rusty, unplugged arcade machine emitting a strange light.",
+            "Body": "Tucked between a humming, empty soda cooler and a broken change machine is an ancient arcade cabinet. The decals are worn away to a grey nothingness. It is entirely unplugged, its thick black cord severed on the floor, yet the screen emits a sickly, pulsating green glow.",
             "ArcadeScreens": [
                 "RUN - 9999", 
                 "ALONE - 0000", 
-                "WHY - 404"
+                "WHY - 404",
+                "W A K E U P - 1111"
             ],
             "Choices": [
                 {
-                    "Text": "Aisle 1",
+                    "Text": "Step away to Aisle 1",
                     "Target": "Aisle 1"
                 }
             ]
         },
         "Washer 4": {
-            "Body": "This is Washer 4. You peer into the deep, damp lint trap.",
+            "Body": "Unlike the others, Washer 4 is dead, its door hanging open. The smell of mildew and stagnant water is overpowering here. Near the bottom is a dark, damp slot—the lint trap. It looks unusually deep, and an unnatural cold draft seems to be seeping out of it.",
             "Item": "Bent Quarter",
             "Choices": [
                 {
-                    "Text": "Aisle 2",
+                    "Text": "Back away to Aisle 2",
                     "Target": "Aisle 2"
                 }
             ]
         },
         "Back Hallway": {
-            "Body": "This is the dark back hallway. The heavy metal door to the Manager's Office is jammed shut by a faceplate with a missing screw.",
+            "Body": "The harsh fluorescent lighting fails to reach this narrow, claustrophobic corridor. The air is stagnant and freezing. At the end of the hall is a heavy, rusted metal door marked 'MANAGER'. It is jammed completely shut, secured by a blank metal faceplate. There is a single screw missing from the plate, leaving a small, flat slit just wide enough for something small.",
             "Choices": [
                 {
-                    "Text": "Aisle 2",
+                    "Text": "Retreat to Aisle 2",
                     "Target": "Aisle 2"
                 },
                 {
-                    "Text": "Pry open the Manager's Office door",
+                    "Text": "Wedge the Bent Quarter into the faceplate slit and pry open the Manager's Office door",
                     "Target": "Manager's Office",
                     "RequiredItem": "Bent Quarter"
                 }
             ]
         },
         "Manager's Office": {
-            "Body": "This is the manager's office of the laundromat.",
+            "Body": "You pry the metal plate off, the rusted screws snapping, and shove the heavy door open. You step inside, expecting a way out. Instead, you find a tiny, windowless concrete room. On a rusted metal desk sits a single security monitor, glowing brightly in the dark. It shows a live, black-and-white feed of the Front Doors. A tall, shadowy figure is standing right outside the foggy glass, waiting patiently to be let in.",
             "Choices": [
                 {
-                    "Text": "Back Hallway",
+                    "Text": "Flee back into the hallway",
                     "Target": "Back Hallway"
                 }
             ]
